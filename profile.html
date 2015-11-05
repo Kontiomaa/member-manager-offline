@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Profile</title>
+		<meta name="author" content="Samuel Kontiomaa">
+		<script src="js/db.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Profile</h1>
+		</header>
+		<main>
+			<nav>
+				<ul>
+					<li><a href="index.html">Front page</a></li>
+					<li><a href="add.html">Enroll</a></li>
+					<li><a href="list.html">Browse</a></li>
+					<li><a href="search.html">Search</a></li>
+					<li><a href="#">Remove</a></li>
+				</ul>
+			</nav>
+			<section>
+				<p id="profileData">Profile data here...</p>
+			</section>
+		</main>
+		<script>
+			document.addEventListener("DOMContentLoaded", function(){
+				getProfile();
+			});
+		</script>
+	</body>
+</html>

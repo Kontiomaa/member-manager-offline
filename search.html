@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Search Athletes</title>
+		<meta name="author" content="Samuel Kontiomaa">
+		<script src="js/db.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Search Athletes</h1>
+		</header>
+		<main>
+			<nav>
+				<ul>
+					<li><a href="index.html">Front page</a></li>
+					<li><a href="add.html">Enroll</a></li>
+					<li><a href="list.html">Browse</a></li>
+					<li><a href="#">Search</a></li>
+					<li><a href="#">Remove</a></li>
+				</ul>
+			</nav>
+			<section>
+				<input id="searchValue" type="number" min=1 />
+				<input type="button" value="Search Id" onclick="getAthleteInfoById()" />
+				<br><br>
+				<input id="searchValue2" type="text" />
+				<input type="button" value="Search name" onclick="getAthleteInfoByName()" />
+				<hr>
+				<div id="searchResult"></div>
+			</section>
+		</main>
+	</body>
+</html>

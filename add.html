@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>New Athlete</title>
+		<meta name="author" content="Samuel Kontiomaa">
+		<script src="js/db.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>New Athlete</h1>
+		</header>
+		<main>
+			<nav>
+				<ul>
+					<li><a href="index.html">Front page</a></li>
+					<li><a href="#">Enroll</a></li>
+					<li><a href="list.html">Browse</a></li>
+					<li><a href="search.html">Search</a></li>
+					<li><a href="#">Remove</a></li>
+				</ul>
+			</nav>
+			<section>
+				<div id="newAthleteStatus"></div>
+				<fieldset>
+					<legend>Personal information</legend>
+					Firstname: <input id="fNameField" type="text" /><br/>
+					Lastname: <input id="lNameField" type="text" /><br />
+					Birthday: <input id="bdayField" type="date" /><br />
+				</fieldset>
+				<fieldset>
+					<legend>Contact information</legend>
+				</fieldset>
+				<input type="button" value="Save" onclick="saveAthlete()" />
+			</section>
+		</main>
+	</body>
+</html>
