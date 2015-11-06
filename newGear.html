@@ -2,13 +2,13 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>Profile</title>
+		<title>New Gear</title>
 		<meta name="author" content="Samuel Kontiomaa">
 		<script src="js/db.js"></script>
 	</head>
 	<body>
 		<header>
-			<h1>Profile</h1>
+			<h1>New Gear</h1>
 		</header>
 		<main>
 			<nav>
@@ -23,20 +23,18 @@
 				</ul>
 				<p>Gear</p>
 				<ul>
-					<li><a href="newGear.html">New</a></li>
+					<li><a href="#">New</a></li>
 					<li><a href="gearList.html">Browse</a></li>
 					<li><a href="searchGear.html">Search</a></li>
 					<li><a href="#">Remove</a></li>
 				</ul>
 			</nav>
 			<section>
-				<p id="profileData">Profile data here...</p>
+				<div id="newGearStatus"></div>
+				Name: <input id="gearName" type="text" /><br/>
+				Type: <input id="gearType" type="text" /><br />
+				<input type="button" value="Save" onclick="saveGear()" />
 			</section>
 		</main>
-		<script>
-			document.addEventListener("DOMContentLoaded", function(){
-				getProfile();
-			});
-		</script>
 	</body>
 </html>
